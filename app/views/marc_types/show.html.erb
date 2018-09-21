@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @marc_type.name %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @marc_type.code %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @marc_type.about %>
+</p>
+
+<%= link_to 'Edit', edit_marc_type_path(@marc_type) %> |
+<%= link_to 'Back', marc_types_path %>

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Description Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Code</th>
+      <th>About</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @description_types.each do |description_type| %>
+      <tr>
+        <td><%= description_type.name %></td>
+        <td><%= description_type.code %></td>
+        <td><%= description_type.about %></td>
+        <td><%= link_to 'Show', description_type %></td>
+        <td><%= link_to 'Edit', edit_description_type_path(description_type) %></td>
+        <td><%= link_to 'Destroy', description_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Description Type', new_description_type_path %>

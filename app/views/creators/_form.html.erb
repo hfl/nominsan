@@ -1,0 +1,52 @@
+<%= form_with(model: creator, local: true) do |form| %>
+  <% if creator.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(creator.errors.count, "error") %> prohibited this creator from being saved:</h2>
+
+      <ul>
+      <% creator.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :literature_id %>
+    <%= form.text_field :literature_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :creator %>
+    <%= form.text_field :creator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :role_id %>
+    <%= form.text_field :role_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :institution %>
+    <%= form.text_field :institution %>
+  </div>
+
+  <div class="field">
+    <%= form.label :discipline %>
+    <%= form.text_field :discipline %>
+  </div>
+
+  <div class="field">
+    <%= form.label :authorid %>
+    <%= form.text_field :authorid %>
+  </div>
+
+  <div class="field">
+    <%= form.label :intr %>
+    <%= form.text_area :intr %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

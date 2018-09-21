@@ -1,0 +1,2 @@
+module CadalTypesHelper
+end

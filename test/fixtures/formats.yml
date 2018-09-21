@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  format_mime: one
+  format_extent: one
+  scan_resolution: 1
+  literature: one
+
+two:
+  format_mime: two
+  format_extent: two
+  scan_resolution: 1
+  literature: two

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  literature: one
+  currency: one
+  number: 1
+  about: MyText
+
+two:
+  literature: two
+  currency: two
+  number: 1
+  about: MyText

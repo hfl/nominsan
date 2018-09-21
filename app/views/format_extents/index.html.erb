@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Format Extents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Code</th>
+      <th>About</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @format_extents.each do |format_extent| %>
+      <tr>
+        <td><%= format_extent.name %></td>
+        <td><%= format_extent.code %></td>
+        <td><%= format_extent.about %></td>
+        <td><%= link_to 'Show', format_extent %></td>
+        <td><%= link_to 'Edit', edit_format_extent_path(format_extent) %></td>
+        <td><%= link_to 'Destroy', format_extent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Format Extent', new_format_extent_path %>

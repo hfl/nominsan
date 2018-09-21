@@ -1,0 +1,2 @@
+class FormatMime < ApplicationRecord
+end

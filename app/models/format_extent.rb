@@ -1,0 +1,2 @@
+class FormatExtent < ApplicationRecord
+end

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @alternative_title.title %>
+</p>
+
+<p>
+  <strong>Alternative title:</strong>
+  <%= @alternative_title.alternative_title %>
+</p>
+
+<%= link_to 'Edit', edit_alternative_title_path(@alternative_title) %> |
+<%= link_to 'Back', alternative_titles_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  literature: one
+  creator: MyString
+  role: one
+  institution: MyString
+  discipline: MyString
+  authorid: MyString
+  intr: MyText
+
+two:
+  literature: two
+  creator: MyString
+  role: two
+  institution: MyString
+  discipline: MyString
+  authorid: MyString
+  intr: MyText

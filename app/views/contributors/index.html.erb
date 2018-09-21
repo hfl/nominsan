@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Contributors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Literature</th>
+      <th>Contributor</th>
+      <th>Role</th>
+      <th>Institution</th>
+      <th>Discipline</th>
+      <th>Authorid</th>
+      <th>Intr</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contributors.each do |contributor| %>
+      <tr>
+        <td><%= contributor.literature %></td>
+        <td><%= contributor.contributor %></td>
+        <td><%= contributor.role %></td>
+        <td><%= contributor.institution %></td>
+        <td><%= contributor.discipline %></td>
+        <td><%= contributor.authorid %></td>
+        <td><%= contributor.intr %></td>
+        <td><%= link_to 'Show', contributor %></td>
+        <td><%= link_to 'Edit', edit_contributor_path(contributor) %></td>
+        <td><%= link_to 'Destroy', contributor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Contributor', new_contributor_path %>

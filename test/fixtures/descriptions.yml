@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  literature: one
+  description_type: one
+  description: MyText
+
+two:
+  literature: two
+  description_type: two
+  description: MyText

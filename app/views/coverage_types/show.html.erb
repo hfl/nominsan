@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @coverage_type.name %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @coverage_type.code %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @coverage_type.about %>
+</p>
+
+<%= link_to 'Edit', edit_coverage_type_path(@coverage_type) %> |
+<%= link_to 'Back', coverage_types_path %>

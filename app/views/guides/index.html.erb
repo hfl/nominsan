@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Guides</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Literature</th>
+      <th>Cover</th>
+      <th>Title</th>
+      <th>Colophon</th>
+      <th>Copyright</th>
+      <th>Abstract</th>
+      <th>Toc</th>
+      <th>Foreword</th>
+      <th>Preface</th>
+      <th>Content</th>
+      <th>Index</th>
+      <th>Loi</th>
+      <th>Reference</th>
+      <th>Backcover</th>
+      <th>Total page</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @guides.each do |guide| %>
+      <tr>
+        <td><%= guide.literature %></td>
+        <td><%= guide.cover %></td>
+        <td><%= guide.title %></td>
+        <td><%= guide.colophon %></td>
+        <td><%= guide.copyright %></td>
+        <td><%= guide.abstract %></td>
+        <td><%= guide.toc %></td>
+        <td><%= guide.foreword %></td>
+        <td><%= guide.preface %></td>
+        <td><%= guide.content %></td>
+        <td><%= guide.index %></td>
+        <td><%= guide.loi %></td>
+        <td><%= guide.reference %></td>
+        <td><%= guide.backcover %></td>
+        <td><%= guide.total_page %></td>
+        <td><%= link_to 'Show', guide %></td>
+        <td><%= link_to 'Edit', edit_guide_path(guide) %></td>
+        <td><%= link_to 'Destroy', guide, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Guide', new_guide_path %>

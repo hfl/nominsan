@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  literature: one
+  marc_type: one
+  marc: MyString
+
+two:
+  literature: two
+  marc_type: two
+  marc: MyString

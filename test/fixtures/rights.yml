@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  literature: one
+  right_type: one
+  right: MyString
+
+two:
+  literature: two
+  right_type: two
+  right: MyString

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cadal_type.name %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @cadal_type.code %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @cadal_type.about %>
+</p>
+
+<%= link_to 'Edit', edit_cadal_type_path(@cadal_type) %> |
+<%= link_to 'Back', cadal_types_path %>

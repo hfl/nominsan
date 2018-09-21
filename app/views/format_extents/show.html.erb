@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @format_extent.name %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @format_extent.code %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @format_extent.about %>
+</p>
+
+<%= link_to 'Edit', edit_format_extent_path(@format_extent) %> |
+<%= link_to 'Back', format_extents_path %>

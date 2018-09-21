@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Literature:</strong>
+  <%= @contributor.literature %>
+</p>
+
+<p>
+  <strong>Contributor:</strong>
+  <%= @contributor.contributor %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @contributor.role %>
+</p>
+
+<p>
+  <strong>Institution:</strong>
+  <%= @contributor.institution %>
+</p>
+
+<p>
+  <strong>Discipline:</strong>
+  <%= @contributor.discipline %>
+</p>
+
+<p>
+  <strong>Authorid:</strong>
+  <%= @contributor.authorid %>
+</p>
+
+<p>
+  <strong>Intr:</strong>
+  <%= @contributor.intr %>
+</p>
+
+<%= link_to 'Edit', edit_contributor_path(@contributor) %> |
+<%= link_to 'Back', contributors_path %>

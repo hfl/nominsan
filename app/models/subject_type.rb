@@ -1,0 +1,2 @@
+class SubjectType < ApplicationRecord
+end

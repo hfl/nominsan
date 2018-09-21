@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Right Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Code</th>
+      <th>About</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @right_types.each do |right_type| %>
+      <tr>
+        <td><%= right_type.name %></td>
+        <td><%= right_type.code %></td>
+        <td><%= right_type.about %></td>
+        <td><%= link_to 'Show', right_type %></td>
+        <td><%= link_to 'Edit', edit_right_type_path(right_type) %></td>
+        <td><%= link_to 'Destroy', right_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Right Type', new_right_type_path %>

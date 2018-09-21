@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Coverage Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Code</th>
+      <th>About</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @coverage_types.each do |coverage_type| %>
+      <tr>
+        <td><%= coverage_type.name %></td>
+        <td><%= coverage_type.code %></td>
+        <td><%= coverage_type.about %></td>
+        <td><%= link_to 'Show', coverage_type %></td>
+        <td><%= link_to 'Edit', edit_coverage_type_path(coverage_type) %></td>
+        <td><%= link_to 'Destroy', coverage_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Coverage Type', new_coverage_type_path %>

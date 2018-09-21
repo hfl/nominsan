@@ -1,0 +1,17 @@
+<%= form_with(model: [:admin, literature], local: true) do |form| %>
+  <% if literature.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(literature.errors.count, "error") %> prohibited this literature from being saved:</h2>
+
+      <ul>
+      <% literature.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

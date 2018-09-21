@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  literature: one
+  grantor: MyString
+  displine: MyString
+  level: MyString
+
+two:
+  literature: two
+  grantor: MyString
+  displine: MyString
+  level: MyString

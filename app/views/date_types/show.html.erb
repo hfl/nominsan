@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @date_type.name %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @date_type.code %>
+</p>
+
+<p>
+  <strong>Ref:</strong>
+  <%= @date_type.ref %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @date_type.about %>
+</p>
+
+<%= link_to 'Edit', edit_date_type_path(@date_type) %> |
+<%= link_to 'Back', date_types_path %>

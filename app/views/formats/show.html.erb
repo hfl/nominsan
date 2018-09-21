@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Format mime:</strong>
+  <%= @format.format_mime %>
+</p>
+
+<p>
+  <strong>Format extent:</strong>
+  <%= @format.format_extent %>
+</p>
+
+<p>
+  <strong>Scan resolution:</strong>
+  <%= @format.scan_resolution %>
+</p>
+
+<p>
+  <strong>Literature:</strong>
+  <%= @format.literature %>
+</p>
+
+<%= link_to 'Edit', edit_format_path(@format) %> |
+<%= link_to 'Back', formats_path %>

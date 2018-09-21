@@ -1,0 +1,2 @@
+class DateXsis < ApplicationRecord
+end

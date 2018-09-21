@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cadal_type: one
+  literature: one
+
+two:
+  cadal_type: two
+  literature: two

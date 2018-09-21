@@ -1,0 +1,2 @@
+class MarcType < ApplicationRecord
+end

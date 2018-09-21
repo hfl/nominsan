@@ -1,0 +1,171 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+zh-CN:
+# views
+  nominsan: "NOMINSAN 系统"
+
+  layouts:
+    admin:
+      dashboard: "起始页"
+      metadata: "元数据"
+      user: "用户"
+      standard: "规范"
+      guide: "手册"
+      logout: "注销"
+
+  admin:
+    literatures:
+      index:
+        metadata: "元数据"
+        metadata_lists: "所有元数据"
+
+# models and forms
+  activerecord:
+    models:
+      literature: '文献'
+      title: '题名'
+      alternative_title: '交替题名'
+      creator: "责任者"
+      contributor: "次要责任者"
+      subject: "主题"
+      description: "描述"
+      tempu: "日期"
+      format: "格式"
+      type: "类型"
+      source: "来源"
+      language: "语言"
+      identifier: "唯一标识符"
+      coverage: "范围"
+      publisher: "出版社"
+      relation: "关联"
+      rights: "权限"
+      edition: "版本"
+      marc: "机读目录"
+      degree: "学位"
+      price: '价格'
+      attachment: '附件'
+      guide: "导览"
+      toc: "目录"
+    attributes:
+      literature:
+        mlid: 'NS识别码'
+      title:
+        title: "题名"
+      alternative_title:
+        alternative_title: '交替题名'
+      creator:
+        creator: '责任者'
+        role_id: '责任方式'
+        institution: '所属机构'
+        discipline: '专业'
+        authorid: '责任者ID'
+      contributor:
+        contributor: '次要责任者'
+        role_id: '责任方式'
+        institution: '所属机构'
+        discipline: '专业'
+        authorid: '责任者ID'
+      subject:
+        subject_type_id: '主题类型'
+        subject: '主题内容'
+      description:
+        description_type_id: '描述类型'
+        description: '描述'
+      tempu:
+        date_type_id: '日期类型'
+        date_xsi_id: '日期形式'
+        date: '日期'
+        note: '注释'
+      format:
+        format_mime_id: '格式类型'
+        format_extent_size: '格式扩展'
+        scan_resolution: '扫描分辨率'
+      type:
+        cadal_type_id: 'Cadal分类'
+      source:
+        source: '来源'
+      language:
+        language_type_id: '语言代码标准'
+        language: '语言代码'
+        about: '说明'
+      identifier:
+        identifier_type_id: '标识符类型'
+        identifier: '标识符'
+      coverage:
+        coverage_type_id: '范围类型'
+        coverage: '范围'
+      publisher:
+        name: '出版社名'
+        city: '所在城市'
+      relation:
+        relation_type_id: '关联类型'
+      right:
+        right_type_id: '权限类型'
+        right: '权限'
+      edition:
+        edition_type_id: '版本类型'
+        edition: '版本'
+      price:
+        currency_id: '货币类型'
+        num: '数量'
+        about: '注释'
+      marc:
+        marc_type_id: '机读目录类型'
+        marc: '机读目录'
+      degree:
+        grantor: '授予单位'
+        discipline: '学科'
+        level: '学位名称'
+      attachment:
+        attachment_type_id: '附件类型'
+        upload_attachment: '选择需要上传的文件'
+        about: '注释'
+      guide:
+        cover: "封面"
+        title: "题名页"
+        colophon: "扉页"
+        copyright: "版权页"
+        abstract: "摘要"
+        toc: "目录"
+        foreword: "序"
+        preface: "前言"
+        content: "正文"
+        appendix: "附录"
+        index: "索引"
+        loi: "附表"
+        reference: "参考文献"
+        backcover: "封底"
+      toc:
+        chapter: "章节序号"
+        title: "章节标题"
+        page: "所在页码"
+        file_number: "文件名"

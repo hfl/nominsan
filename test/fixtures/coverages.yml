@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  literature: one
+  coverage_type: one
+  coverage: MyString
+
+two:
+  literature: two
+  coverage_type: two
+  coverage: MyString

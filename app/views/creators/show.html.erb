@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Literature:</strong>
+  <%= @creator.literature %>
+</p>
+
+<p>
+  <strong>Creator:</strong>
+  <%= @creator.creator %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @creator.role %>
+</p>
+
+<p>
+  <strong>Institution:</strong>
+  <%= @creator.institution %>
+</p>
+
+<p>
+  <strong>Discipline:</strong>
+  <%= @creator.discipline %>
+</p>
+
+<p>
+  <strong>Authorid:</strong>
+  <%= @creator.authorid %>
+</p>
+
+<p>
+  <strong>Intr:</strong>
+  <%= @creator.intr %>
+</p>
+
+<%= link_to 'Edit', edit_creator_path(@creator) %> |
+<%= link_to 'Back', creators_path %>

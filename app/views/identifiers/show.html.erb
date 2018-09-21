@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Literature:</strong>
+  <%= @identifier.literature %>
+</p>
+
+<p>
+  <strong>Identifier type:</strong>
+  <%= @identifier.identifier_type %>
+</p>
+
+<p>
+  <strong>Identifier:</strong>
+  <%= @identifier.identifier %>
+</p>
+
+<%= link_to 'Edit', edit_identifier_path(@identifier) %> |
+<%= link_to 'Back', identifiers_path %>

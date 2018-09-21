@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Literature:</strong>
+  <%= @right.literature %>
+</p>
+
+<p>
+  <strong>Right type:</strong>
+  <%= @right.right_type %>
+</p>
+
+<p>
+  <strong>Right:</strong>
+  <%= @right.right %>
+</p>
+
+<%= link_to 'Edit', edit_right_path(@right) %> |
+<%= link_to 'Back', rights_path %>

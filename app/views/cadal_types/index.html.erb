@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cadal Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Code</th>
+      <th>About</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cadal_types.each do |cadal_type| %>
+      <tr>
+        <td><%= cadal_type.name %></td>
+        <td><%= cadal_type.code %></td>
+        <td><%= cadal_type.about %></td>
+        <td><%= link_to 'Show', cadal_type %></td>
+        <td><%= link_to 'Edit', edit_cadal_type_path(cadal_type) %></td>
+        <td><%= link_to 'Destroy', cadal_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cadal Type', new_cadal_type_path %>

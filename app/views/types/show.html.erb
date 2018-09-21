@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cadal type:</strong>
+  <%= @type.cadal_type %>
+</p>
+
+<p>
+  <strong>Literature:</strong>
+  <%= @type.literature %>
+</p>
+
+<%= link_to 'Edit', edit_type_path(@type) %> |
+<%= link_to 'Back', types_path %>

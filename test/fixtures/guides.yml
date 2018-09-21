@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  literature: one
+  cover: MyString
+  title: MyString
+  colophon: MyString
+  copyright: MyString
+  abstract: MyString
+  toc: MyString
+  foreword: MyString
+  preface: MyString
+  content: MyString
+  index: MyString
+  loi: MyString
+  reference: MyString
+  backcover: MyString
+  total_page: 1
+
+two:
+  literature: two
+  cover: MyString
+  title: MyString
+  colophon: MyString
+  copyright: MyString
+  abstract: MyString
+  toc: MyString
+  foreword: MyString
+  preface: MyString
+  content: MyString
+  index: MyString
+  loi: MyString
+  reference: MyString
+  backcover: MyString
+  total_page: 1

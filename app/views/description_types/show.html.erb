@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @description_type.name %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @description_type.code %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @description_type.about %>
+</p>
+
+<%= link_to 'Edit', edit_description_type_path(@description_type) %> |
+<%= link_to 'Back', description_types_path %>

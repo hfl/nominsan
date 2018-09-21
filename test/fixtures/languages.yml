@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  literature: one
+  language_type: one
+  language: MyString
+  about: MyText
+
+two:
+  literature: two
+  language_type: two
+  language: MyString
+  about: MyText

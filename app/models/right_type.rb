@@ -1,0 +1,2 @@
+class RightType < ApplicationRecord
+end

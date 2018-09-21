@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Marcs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Literature</th>
+      <th>Marc type</th>
+      <th>Marc</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @marcs.each do |marc| %>
+      <tr>
+        <td><%= marc.literature %></td>
+        <td><%= marc.marc_type %></td>
+        <td><%= marc.marc %></td>
+        <td><%= link_to 'Show', marc %></td>
+        <td><%= link_to 'Edit', edit_marc_path(marc) %></td>
+        <td><%= link_to 'Destroy', marc, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Marc', new_marc_path %>

@@ -1,0 +1,47 @@
+<%= form_with(model: toc, local: true) do |form| %>
+  <% if toc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(toc.errors.count, "error") %> prohibited this toc from being saved:</h2>
+
+      <ul>
+      <% toc.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :literature_id %>
+    <%= form.text_field :literature_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :chapter %>
+    <%= form.text_field :chapter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :page %>
+    <%= form.text_field :page %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fiel_number %>
+    <%= form.number_field :fiel_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :parent_id %>
+    <%= form.number_field :parent_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

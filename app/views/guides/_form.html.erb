@@ -1,0 +1,92 @@
+<%= form_with(model: guide, local: true) do |form| %>
+  <% if guide.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(guide.errors.count, "error") %> prohibited this guide from being saved:</h2>
+
+      <ul>
+      <% guide.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :literature_id %>
+    <%= form.text_field :literature_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cover %>
+    <%= form.text_field :cover %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :colophon %>
+    <%= form.text_field :colophon %>
+  </div>
+
+  <div class="field">
+    <%= form.label :copyright %>
+    <%= form.text_field :copyright %>
+  </div>
+
+  <div class="field">
+    <%= form.label :abstract %>
+    <%= form.text_field :abstract %>
+  </div>
+
+  <div class="field">
+    <%= form.label :toc %>
+    <%= form.text_field :toc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :foreword %>
+    <%= form.text_field :foreword %>
+  </div>
+
+  <div class="field">
+    <%= form.label :preface %>
+    <%= form.text_field :preface %>
+  </div>
+
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+
+  <div class="field">
+    <%= form.label :index %>
+    <%= form.text_field :index %>
+  </div>
+
+  <div class="field">
+    <%= form.label :loi %>
+    <%= form.text_field :loi %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reference %>
+    <%= form.text_field :reference %>
+  </div>
+
+  <div class="field">
+    <%= form.label :backcover %>
+    <%= form.text_field :backcover %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total_page %>
+    <%= form.number_field :total_page %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

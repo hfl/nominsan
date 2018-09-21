@@ -1,0 +1,2 @@
+class DescriptionType < ApplicationRecord
+end
